@@ -41,7 +41,7 @@ const onSubmit = async (data) => {
   }
 
   try {
-    await axios.post("http://localhost:3000/users/register", formData, {
+    await axios.post("https://trabajo-practico-ap-3.onrender.com/users/register", formData, {
       headers: {
         "Content-Type": "multipart/form-data",
       },
