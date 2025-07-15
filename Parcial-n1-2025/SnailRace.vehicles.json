@@ -1,0 +1,390 @@
+[{
+  "_id": {
+    "$oid": "682cdb8e5950c24e02ecc17f"
+  },
+  "model": "Wave 110",
+  "category": "moto",
+  "type": "Scooter",
+  "year": 2023,
+  "fuel": "Gasolina",
+  "engine": "110cc",
+  "price": 1800,
+  "tags": [
+    "Económica",
+    "Urbana"
+  ],
+  "brand": {
+    "$oid": "682ccc370e535e835af195d4"
+  },
+  "__v": 0,
+  "imageUrl": "/uploads/1751410103991-.jpg"
+},
+{
+  "_id": {
+    "$oid": "682cdbc25950c24e02ecc181"
+  },
+  "model": "Civic",
+  "category": "auto",
+  "type": "Sedán",
+  "year": 2023,
+  "fuel": "Gasolina",
+  "engine": "2.0L I4",
+  "price": 25000,
+  "tags": [
+    "Juvenil",
+    "Eficiencia"
+  ],
+  "brand": {
+    "$oid": "682ccc500e535e835af195d6"
+  },
+  "__v": 0,
+  "imageUrl": "/uploads/1751410268228-.jpg"
+},
+{
+  "_id": {
+    "$oid": "682cdbf75950c24e02ecc183"
+  },
+  "model": "Accord",
+  "category": "auto",
+  "type": "Sedán",
+  "year": 2023,
+  "fuel": "Híbrido",
+  "engine": "2.0L I4 híbrido",
+  "price": 31000,
+  "tags": [
+    "Híbrido",
+    "Confort"
+  ],
+  "brand": {
+    "$oid": "682ccc500e535e835af195d6"
+  },
+  "__v": 0,
+  "imageUrl": "/uploads/1751410331260-.jpg"
+},
+{
+  "_id": {
+    "$oid": "682cdc145950c24e02ecc185"
+  },
+  "model": "Mustang",
+  "category": "auto",
+  "type": "Coupé",
+  "year": 2023,
+  "fuel": "Gasolina",
+  "engine": "5.0L V8",
+  "price": 55000,
+  "tags": [
+    "Deportivo",
+    "Gasolina"
+  ],
+  "brand": {
+    "$oid": "682ccc6f0e535e835af195d8"
+  },
+  "__v": 0,
+  "imageUrl": "/uploads/1751410449956-.jpg"
+},
+{
+  "_id": {
+    "$oid": "682cdc285950c24e02ecc187"
+  },
+  "model": "F-150",
+  "category": "auto",
+  "type": "Pickup",
+  "year": 2022,
+  "fuel": "Gasolina",
+  "engine": "3.3L V6",
+  "price": 42000,
+  "tags": [
+    "Pickup",
+    "Trabajo"
+  ],
+  "brand": {
+    "$oid": "682ccc6f0e535e835af195d8"
+  },
+  "__v": 0,
+  "imageUrl": "/uploads/1751410526090-.jpg"
+},
+{
+  "_id": {
+    "$oid": "682cdc455950c24e02ecc189"
+  },
+  "model": "X5",
+  "category": "auto",
+  "type": "SUV",
+  "year": 2023,
+  "fuel": "Diésel",
+  "engine": "3.0L I6",
+  "price": 65000,
+  "tags": [
+    "SUV",
+    "Lujo"
+  ],
+  "brand": {
+    "$oid": "682ccc7f0e535e835af195da"
+  },
+  "__v": 0,
+  "imageUrl": "/uploads/1751410603530-.jpg"
+},
+{
+  "_id": {
+    "$oid": "682cdc575950c24e02ecc18b"
+  },
+  "model": "320i",
+  "category": "auto",
+  "type": "Sedán",
+  "year": 2022,
+  "fuel": "Gasolina",
+  "engine": "2.0L Turbo",
+  "price": 41000,
+  "tags": [
+    "Elegante",
+    "Urbano"
+  ],
+  "brand": {
+    "$oid": "682ccc7f0e535e835af195da"
+  },
+  "__v": 0,
+  "imageUrl": "/uploads/1751410677873-.jpg"
+},
+{
+  "_id": {
+    "$oid": "682cdc8b5950c24e02ecc18f"
+  },
+  "model": "Tucson",
+  "category": "auto",
+  "type": "SUV",
+  "year": 2023,
+  "fuel": "Híbrido",
+  "engine": "1.6L Turbo Híbrido",
+  "price": 32000,
+  "tags": [
+    "SUV",
+    "Híbrido"
+  ],
+  "brand": {
+    "$oid": "682ccc900e535e835af195dc"
+  },
+  "__v": 0,
+  "imageUrl": "/uploads/1751410817107-.jpg"
+},
+{
+  "_id": {
+    "$oid": "682cdc975950c24e02ecc191"
+  },
+  "model": "Santa Fe",
+  "category": "auto",
+  "type": "SUV",
+  "year": 2024,
+  "fuel": "Gasolina",
+  "engine": "2.5L I4",
+  "price": 35000,
+  "tags": [
+    "Familiar",
+    "Comodidad"
+  ],
+  "brand": {
+    "$oid": "682ccc900e535e835af195dc"
+  },
+  "__v": 0,
+  "imageUrl": "/uploads/1751411946897-.jpg"
+},
+{
+  "_id": {
+    "$oid": "682cdcb55950c24e02ecc193"
+  },
+  "model": "YZF-R3",
+  "category": "moto",
+  "type": "Deportiva",
+  "year": 2023,
+  "fuel": "Gasolina",
+  "engine": "321cc",
+  "price": 6000,
+  "tags": [
+    "Deportiva",
+    "Ligera"
+  ],
+  "brand": {
+    "$oid": "682cccbd0e535e835af195de"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682cdcc55950c24e02ecc195"
+  },
+  "model": "MT-07",
+  "category": "moto",
+  "type": "Naked",
+  "year": 2022,
+  "fuel": "Gasolina",
+  "engine": "689cc",
+  "price": 7800,
+  "tags": [
+    "Versátil",
+    "Ágil"
+  ],
+  "brand": {
+    "$oid": "682cccbd0e535e835af195de"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682cdcf75950c24e02ecc197"
+  },
+  "model": "Ninja 400",
+  "category": "moto",
+  "type": "Deportiva",
+  "year": 2023,
+  "fuel": "Gasolina",
+  "engine": "399cc",
+  "price": 6300,
+  "tags": [
+    "Deportiva",
+    "Compacta"
+  ],
+  "brand": {
+    "$oid": "682cccc20e535e835af195e0"
+  },
+  "__v": 0,
+  "imageUrl": "/uploads/1751410900409-.jpg"
+},
+{
+  "_id": {
+    "$oid": "682cdd005950c24e02ecc199"
+  },
+  "model": "Z650",
+  "category": "moto",
+  "type": "Naked",
+  "year": 2023,
+  "fuel": "Gasolina",
+  "engine": "649cc",
+  "price": 7600,
+  "tags": [
+    "Moderna",
+    "Rendimiento"
+  ],
+  "brand": {
+    "$oid": "682cccc20e535e835af195e0"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682cdd225950c24e02ecc19b"
+  },
+  "model": "CBR500R",
+  "category": "moto",
+  "type": "Deportiva",
+  "year": 2023,
+  "fuel": "Gasolina",
+  "engine": "471cc",
+  "price": 7200,
+  "tags": [
+    "Media cilindrada",
+    "Fiable"
+  ],
+  "brand": {
+    "$oid": "682ccc500e535e835af195d6"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682cdd315950c24e02ecc19d"
+  },
+  "model": "CRF250L",
+  "category": "moto",
+  "type": "Enduro",
+  "year": 2022,
+  "fuel": "Gasolina",
+  "engine": "250cc",
+  "price": 5200,
+  "tags": [
+    "Off-road",
+    "Aventura"
+  ],
+  "brand": {
+    "$oid": "682ccc500e535e835af195d6"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682cdd465950c24e02ecc19f"
+  },
+  "model": "R1250GS",
+  "category": "moto",
+  "type": "Adventure",
+  "year": 2023,
+  "fuel": "Gasolina",
+  "engine": "1254cc Boxer",
+  "price": 20000,
+  "tags": [
+    "Aventura",
+    "Premium"
+  ],
+  "brand": {
+    "$oid": "682ccc7f0e535e835af195da"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682cdd535950c24e02ecc1a1"
+  },
+  "model": "G310R",
+  "category": "moto",
+  "type": "Naked",
+  "year": 2022,
+  "fuel": "Gasolina",
+  "engine": "313cc",
+  "price": 5700,
+  "tags": [
+    "Principiantes",
+    "Ligera"
+  ],
+  "brand": {
+    "$oid": "682ccc7f0e535e835af195da"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682cdd6c5950c24e02ecc1a3"
+  },
+  "model": "NMAX 155",
+  "category": "moto",
+  "type": "Scooter",
+  "year": 2023,
+  "fuel": "Gasolina",
+  "engine": "155cc",
+  "price": 3000,
+  "tags": [
+    "Scooter",
+    "Moderna"
+  ],
+  "brand": {
+    "$oid": "682cccbd0e535e835af195de"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682cdd7f5950c24e02ecc1a5"
+  },
+  "model": "Wave 110",
+  "category": "moto",
+  "type": "Scooter",
+  "year": 2023,
+  "fuel": "Gasolina",
+  "engine": "110cc",
+  "price": 1800,
+  "tags": [
+    "Económica",
+    "Urbana"
+  ],
+  "brand": {
+    "$oid": "682ccc500e535e835af195d6"
+  },
+  "__v": 0
+}]

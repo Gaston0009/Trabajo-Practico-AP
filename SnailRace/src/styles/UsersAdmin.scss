@@ -1,0 +1,45 @@
+.admin-users-page {
+  padding: 2rem;
+}
+
+
+.user-title {
+  text-align: center;
+}
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+
+  th, td {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+
+  th {
+    background-color: #f4f4f4;
+  }
+
+  img {
+    object-fit: cover;
+  }
+}
+
+
+.editnotification1 {
+  background-color: #5209da;
+  color: rgb(255, 255, 255);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateY(-10px); }
+  10% { opacity: 1; transform: translateY(0); }
+  90% { opacity: 1; }
+  100% { opacity: 0; transform: translateY(-10px); }
+}

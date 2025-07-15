@@ -1,0 +1,25 @@
+[{
+  "_id": {
+    "$oid": "682bfb3fc05b732bb99ff47c"
+  },
+  "name": "Sofia",
+  "lastname": "Smykalo",
+  "email": "sofia@gmail.com",
+  "username": "China",
+  "password": "$2b$10$ghjr.d8DaW1b7DJM1j2ND.0mFcnlb/OyKRzOgF4nnPXgAvlWo.4yG",
+  "role": "user",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682ca4e0c3e049c77f64498c"
+  },
+  "name": "Gaston",
+  "lastname": "Fernandez",
+  "email": "gaston@gmail.com",
+  "username": "Cloud",
+  "password": "$2b$10$b6pj9pnnTT/STUUoW5v84.HmaLXADawWf6GqjKlRoG56qsWac2nvS",
+  "role": "admin",
+  "__v": 0,
+  "imageUrl": "/uploads/1751409969410-.jpg"
+}]

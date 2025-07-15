@@ -1,0 +1,11 @@
+@use './_variables' as *;
+@use 'sass:color';
+
+.site-footer {
+  background-color: #313131d7;
+  color: #c9c9c9d7;
+  text-align: center;
+  padding: 3rem ;
+  font-size: 0.95rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}

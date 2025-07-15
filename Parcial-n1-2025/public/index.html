@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle and Brand API Documentation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-center w-100">
+                <a class="navbar-brand" href="#">SNAILRACE API</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <div class="card mx-auto" style="width: 80%;">
+            <div class="card-header">
+                <h2>Bienvenidos a nuestra API nuestros Vehiculos y Marcas</h2>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    En SNAILRACE , somos una empresa que ofrece datos sobre vehículos (autos y motos) y marcas. Nuestra API te permite acceder a información detallada sobre vehículos, sus precios, características y marcas de todo el mundo. Con nuestra tecnología, podrás realizar búsquedas, filtrados, ordenamientos y mucho más. ¡Todo al alcance de tu mano!
+                </p>
+            </div>
+        </div>
+
+
+        <section id="vehicles" class="mt-5">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Vehicles API</h3>
+                </div>
+                <div class="card-body">
+                    <p>Aquí puedes interactuar con todos los datos relacionados con vehículos, como autos y motos. A continuación te dejamos las rutas disponibles para acceder a la información:</p>
+
+                    <div class="card mb-3">
+                        <div class="card-header">
+                            <h4>1. Crear Vehículo</h4>
+                        </div>
+                        <div class="card-body">
+                            <p><strong>POST /vehicles</strong></p>
+                            <p><strong>Requiere autorización:</strong> JWT con rol 'admin'</p>
+                            <p><strong>Descripción:</strong> Esta ruta te permite crear un nuevo vehículo en la base de datos. Asegúrate de incluir todos los detalles requeridos.</p>
+                            <p><strong>Ejemplo de solicitud:</strong></p>
+                            <pre>
+                                {
+                                    "model": "Toyota Corolla",
+                                    "category": "Sedan",
+                                    "type": "Car",
+                                    "year": 2020,
+                                    "fuel": "Gasoline",
+                                    "engine": "1.8L",
+                                    "price": 20000,
+                                    "tags": ["compact", "sedan"],
+                                    "brand": "605c72ef153207001f6c72bb"  
+                                }
+                            </pre>
+                        </div>
+                    </div>
+
+
+                    <div class="card mb-3">
+                        <div class="card-header">
+                            <h4>2. Obtener Todos los Vehículos</h4>
+                        </div>
+                        <div class="card-body">
+                            <p><strong>GET /vehicles</strong></p>
+                            <p><strong>Descripción:</strong> Recupera todos los vehículos de la base de datos.</p>
+                            <p><strong>Ejemplo de solicitud:</strong></p>
+                            <pre>GET /vehicles</pre>
+                            <p><strong>Respuesta:</strong> Devuelve una lista de todos los vehículos registrados en el sistema.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="card mb-3">
+                        <div class="card-header">
+                            <h4>3. Obtener Vehículo por ID</h4>
+                        </div>
+                        <div class="card-body">
+                            <p><strong>GET /vehicles/:id</strong></p>
+                            <p><strong>Descripción:</strong> Obtén los detalles de un vehículo específico utilizando su ID.</p>
+                            <p><strong>Ejemplo de solicitud:</strong></p>
+                            <pre>GET /vehicles/60b72c33f1a34d2e5c8f3ffb</pre>
+                            <p><strong>Respuesta:</strong> Información detallada del vehículo con el ID proporcionado.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="card mb-3">
+                        <div class="card-header">
+                            <h4>4. Actualizar Vehículo</h4>
+                        </div>
+                        <div class="card-body">
+                            <p><strong>PUT /vehicles/:id</strong></p>
+                            <p><strong>Requiere autorización:</strong> JWT con rol 'admin'</p>
+                            <p><strong>Descripción:</strong> Permite actualizar la información de un vehículo específico.</p>
+                            <p><strong>Ejemplo de solicitud:</strong></p>
+                            <pre>
+                                {
+                                    "price": 22000,
+                                    "fuel": "Electric"
+                                }
+                            </pre>
+                            <p><strong>Ejemplo de URL:</strong> <code>PUT /vehicles/60b72c33f1a34d2e5c8f3ffb</code></p>
+                        </div>
+                    </div>
+
+
+                    <div class="card mb-3">
+                        <div class="card-header">
+                            <h4>5. Eliminar Vehículo</h4>
+                        </div>
+                        <div class="card-body">
+                            <p><strong>DELETE /vehicles/:id</strong></p>
+                            <p><strong>Requiere autorización:</strong> JWT con rol 'admin'</p>
+                            <p><strong>Descripción:</strong> Elimina un vehículo de la base de datos utilizando su ID.</p>
+                            <p><strong>Ejemplo de solicitud:</strong></p>
+                            <pre>DELETE /vehicles/60b72c33f1a34d2e5c8f3ffb</pre>
+                            <p><strong>Respuesta:</strong> Confirmación de la eliminación del vehículo.</p>
+                        </div>
+                    </div>
+
+                    <div class="card mb-3">
+                        <div class="card-header">
+                            <h4>6. Filtrar y Ordenar Vehículos por Precio</h4>
+                        </div>
+                        <div class="card-body">
+                            <p><strong>GET /vehicles/filter/price-sort</strong></p>
+                            <p><strong>Parámetros de consulta:</strong>
+                                <ul>
+                                    <li><strong>minPrice:</strong> Precio mínimo para filtrar.</li>
+                                    <li><strong>maxPrice:</strong> Precio máximo para filtrar.</li>
+                                    <li><strong>order:</strong> Orden de los resultados, puede ser 'asc' (ascendente) o 'desc' (descendente). Por defecto es 'asc'.</li>
+                                    <li><strong>sortBy:</strong> El campo por el cual ordenar, por defecto es 'price'.</li>
+                                </ul>
+                            </p>
+                            <p><strong>Ejemplo de solicitud:</strong></p>
+                            <pre>
+                                GET /vehicles/filter/price-sort?minPrice=10000&maxPrice=30000&order=desc&sortBy=price
+                            </pre>
+                            <p><strong>Respuesta:</strong> Vehículos filtrados y ordenados por precio en el rango solicitado.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+                <section id="login" class="mt-5">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Iniciar Sesión y Autenticación</h3>
+                </div>
+                <div class="card-body">
+                    <p>
+                        Para acceder a rutas protegidas (como crear, actualizar o eliminar vehículos o marcas), necesitas autenticarte. Esto se hace mediante JWT (JSON Web Token). Primero debes iniciar sesión con un usuario registrado para obtener el token.
+                    </p>
+
+                    <div class="card mb-3">
+                        <div class="card-header">
+                            <h4>1. Iniciar Sesión</h4>
+                        </div>
+                        <div class="card-body">
+                            <p><strong>POST /auth/login</strong></p>
+                            <p><strong>Descripción:</strong> Envía las credenciales del usuario (correo y contraseña) para iniciar sesión.</p>
+                            <p><strong>Ejemplo de solicitud:</strong></p>
+                            <pre>
+                                    {
+                                        "email": "admin@snailrace.com",
+                                        "password": "admin123"
+                                    }
+                                                        </pre>
+                                                        <p><strong>Respuesta exitosa:</strong></p>
+                                                        <pre>
+                                    {
+                                        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+                                        "user": {
+                                            "id": "1234567890",
+                                            "role": "admin",
+                                            "email": "admin@snailrace.com"
+                                        }
+                                    }
+                            </pre>
+                            <p>Guarda este token, ya que lo necesitarás para autenticarte en las rutas protegidas.</p>
+                        </div>
+                    </div>
+
+                    <div class="card mb-3">
+                        <div class="card-header">
+                            <h4>2. Usar el Token para Autenticarse</h4>
+                        </div>
+                        <div class="card-body">
+                            <p><strong>Cabecera requerida en rutas protegidas:</strong></p>
+                            <pre>
+                                Authorization: Bearer [tu_token]
+                            </pre>
+                            <p><strong>Ejemplo con token:</strong></p>
+                            <pre>
+                                GET /vehicles
+                                Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+                            </pre>
+                            <p>Este token verifica tu identidad y permisos. Si eres 'admin', tendrás acceso completo a las rutas protegidas.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <strong>Nota:</strong> Los tokens tienen un tiempo de expiración. Una vez vencido, deberás volver a iniciar sesión para obtener uno nuevo.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="brands" class="mt-5">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Brands API</h3>
+                </div>
+                <div class="card-body">
+                    <p>A continuación te presentamos las rutas para gestionar las marcas de vehículos:</p>
+
+
+                    <div class="card mb-3">
+                        <div class="card-header">
+                            <h4>1. Crear Marca</h4>
+                        </div>
+                        <div class="card-body">
+                            <p><strong>POST /brands</strong></p>
+                            <p><strong>Requiere autorización:</strong> JWT con rol 'admin'</p>
+                            <p><strong>Descripción:</strong> Esta ruta permite crear una nueva marca de vehículo.</p>
+                            <p><strong>Ejemplo de solicitud:</strong></p>
+                            <pre>
+                                {
+                                    "name": "Toyota",
+                                    "country": "Japan"
+                                }
+                            </pre>
+                        </div>
+                    </div>
+
+
+                    <div class="card mb-3">
+                        <div class="card-header">
+                            <h4>2. Obtener Todas las Marcas</h4>
+                        </div>
+                        <div class="card-body">
+                            <p><strong>GET /brands</strong></p>
+                            <p><strong>Descripción:</strong> Obtiene todas las marcas almacenadas en la base de datos.</p>
+                            <p><strong>Ejemplo de solicitud:</strong></p>
+                            <pre>GET /brands</pre>
+                            <p><strong>Respuesta:</strong> Devuelve una lista de todas las marcas registradas.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="card mb-3">
+                        <div class="card-header">
+                            <h4>3. Obtener Marca por ID</h4>
+                        </div>
+                        <div class="card-body">
+                            <p><strong>GET /brands/:id</strong></p>
+                            <p><strong>Descripción:</strong> Obtiene los detalles de una marca específica utilizando su ID.</p>
+                            <p><strong>Ejemplo de solicitud:</strong></p>
+                            <pre>GET /brands/60b72c33f1a34d2e5c8f3ffb</pre>
+                            <p><strong>Respuesta:</strong> Información detallada de la marca con el ID proporcionado.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="card mb-3">
+                        <div class="card-header">
+                            <h4>4. Actualizar Marca</h4>
+                        </div>
+                        <div class="card-body">
+                            <p><strong>PUT /brands/:id</strong></p>
+                            <p><strong>Requiere autorización:</strong> JWT con rol 'admin'</p>
+                            <p><strong>Descripción:</strong> Permite actualizar la información de una marca específica.</p>
+                            <p><strong>Ejemplo de solicitud:</strong></p>
+                            <pre>
+                                    {
+                                        "country": "USA"
+                                    }
+                            </pre>
+                            <p><strong>Ejemplo de URL:</strong> <code>PUT /brands/60b72c33f1a34d2e5c8f3ffb</code></p>
+                        </div>
+                    </div>
+
+                    <div class="card mb-3">
+                        <div class="card-header">
+                            <h4>5. Eliminar Marca</h4>
+                        </div>
+                        <div class="card-body">
+                            <p><strong>DELETE /brands/:id</strong></p>
+                            <p><strong>Requiere autorización:</strong> JWT con rol 'admin'</p>
+                            <p><strong>Descripción:</strong> Elimina una marca de la base de datos utilizando su ID.</p>
+                            <p><strong>Ejemplo de solicitud:</strong></p>
+                            <pre>DELETE /brands/60b72c33f1a34d2e5c8f3ffb</pre>
+                            <p><strong>Respuesta:</strong> Confirmación de la eliminación de la marca.</p>
+                        </div>
+                    </div>
+                </div>
+
+                    <div class="card mb-3">
+                        <div class="card-header">
+                            <h4>6. Buscar Marca por Nombre</h4>
+                        </div>
+                        <div class="card-body">
+                            <p><strong>GET /brands/search/name</strong></p>
+                            <p><strong>Parámetros de consulta:</strong> 
+                                <ul>
+                                    <li><strong>name:</strong> Nombre de la marca para buscar.</li>
+                                </ul>
+                                </p>
+                                <p><strong>Ejemplo de solicitud:</strong></p>
+                                <pre>
+                                    GET /brands/search/name?name=Toyota
+                                </pre>
+                                <p><strong>Respuesta:</strong> Devuelve la marca correspondiente al nombre proporcionado.</p>
+                            </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    </section>
+                </div>
+
+
+    <footer class="bg-light py-3 mt-5">
+        <div class="container text-center">
+            <p><strong>Alumno:</strong>Gastón Fernández Gutiérrez</p>
+            <p><strong>Maestra:</strong>MARCOS GALBAN, Camila Belen</p>
+            <p><strong>Materia:</strong> Aplicaciones Híbridas</p>
+            <p><strong>Comisión:</strong>DWN4AP</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+</body>
+</html>

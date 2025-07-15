@@ -1,0 +1,133 @@
+{
+        "brands": [
+        {
+        "id": 1,
+        "name": "Toyota",
+        "country": "Japón"
+        },
+        {
+        "id": 2,
+        "name": "Honda",
+        "country": "Japón"
+        },
+        {
+        "id": 3,
+        "name": "Ford",
+        "country": "Estados Unidos"
+        },
+        {
+        "id": 4,
+        "name": "BMW",
+        "country": "Alemania"
+        },
+        {
+        "id": 5,
+        "name": "Hyundai",
+        "country": "Corea del Sur"
+        }
+    ],
+        "vehicles": [
+    {
+        "id": 1,
+        "brand_id": 1,
+        "model": "Corolla",
+        "year": 2022,
+        "type": "Sedán",
+        "fuel": "Gasolina",
+        "engine": "1.8L",
+        "price": 25000
+    },
+    {
+        "id": 2,
+        "brand_id": 2,
+        "model": "Civic",
+        "year": 2023,
+        "type": "Sedán",
+        "fuel": "Gasolina",
+        "engine": "2.0L",
+        "price": 26000
+    },
+    {
+        "id": 3,
+        "brand_id": 3,
+        "model": "Mustang",
+        "year": 2023,
+        "type": "Coupé",
+        "fuel": "Gasolina",
+        "engine": "5.0L V8",
+        "price": 55000
+    },
+    {
+        "id": 4,
+        "brand_id": 4,
+        "model": "X5",
+        "year": 2024,
+        "type": "SUV",
+        "fuel": "Diésel",
+        "engine": "3.0L",
+        "price": 60000
+    },
+    {
+        "id": 5,
+        "brand_id": 5,
+        "model": "Elantra",
+        "year": 2022,
+        "type": "Sedán",
+        "fuel": "Gasolina",
+        "engine": "2.0L",
+        "price": 21000
+    },
+    {
+        "id": 6,
+        "brand_id": 1,
+        "model": "RAV4",
+        "year": 2023,
+        "type": "SUV",
+        "fuel": "Híbrido",
+        "engine": "2.5L",
+        "price": 32000
+    },
+    {
+        "id": 7,
+        "brand_id": 2,
+        "model": "Accord",
+        "year": 2022,
+        "type": "Sedán",
+        "fuel": "Híbrido",
+        "engine": "2.0L",
+        "price": 31000
+    },
+    {
+        "id": 8,
+        "brand_id": 3,
+        "model": "F-150",
+        "year": 2024,
+        "type": "Pickup",
+        "fuel": "Gasolina",
+        "engine": "3.5L V6",
+        "price": 45000
+    },
+    {
+        "id": 9,
+        "brand_id": 4,
+        "model": "i4",
+        "year": 2023,
+        "type": "Sedán",
+        "fuel": "Eléctrico",
+        "engine": "Motor eléctrico",
+        "price": 56000
+    },
+    {
+        "id": 10,
+        "brand_id": 5,
+        "model": "Tucson",
+        "year": 2023,
+        "type": "SUV",
+        "fuel": "Gasolina",
+        "engine": "2.5L",
+        "price": 29000
+    }
+]
+
+
+}

@@ -1,0 +1,37 @@
+@use './variables' as *;
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: $bg-dark;
+  color: $text-light;
+
+  .nav-left, .nav-center, .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .logo {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: $primary;
+    text-decoration: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: $text-light;
+    transition: color 0.3s;
+
+    &.active {
+      color: $primary;
+    }
+
+    &:hover {
+      color: $primary-hover;
+    }
+  }
+}
