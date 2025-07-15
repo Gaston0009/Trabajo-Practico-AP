@@ -28,7 +28,7 @@ const Login = () => {
 
   const onSubmit = async (data) => {
     try {
-      const res = await axios.post("http://localhost:3000/users/login", data);
+      const res = await axios.post("https://trabajo-practico-ap-3.onrender.com/users/login", data);
       Cookies.set('token', res.data.token, { expires: 1 });
 
       const decoded = jwtDecode(res.data.token);
