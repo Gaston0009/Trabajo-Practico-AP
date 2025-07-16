@@ -14,7 +14,7 @@ const BrandView = () => {
   const fetchBrand = async () => {
     try {
       const token = Cookies.get('token');
-      const res = await axios.get(`http://localhost:3000/brands/${id}`, {
+      const res = await axios.get(`https://trabajo-practico-ap-3.onrender.com/brands/${id}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       setBrand(res.data);
@@ -35,7 +35,7 @@ const BrandView = () => {
       <h1 className="brand-title">Detalle de la Marcas</h1>
       {brand.imageUrl && (
         <img
-          src={`http://localhost:3000${brand.imageUrl}`}
+          src={`https://trabajo-practico-ap-3.onrender.com${brand.imageUrl}`}
           alt={brand.model}
           className="brand-detail-image"
         />
