@@ -11,7 +11,7 @@ const VehicleView= () => {
   const fetchVehicle = async () => {
     try {
       const token = Cookies.get('token');
-      const res = await axios.get(`http://localhost:3000/vehicles/${id}`, {
+      const res = await axios.get(`https://trabajo-practico-ap-3.onrender.com/vehicles/${id}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       setVehicle(res.data);
@@ -32,7 +32,7 @@ const VehicleView= () => {
 
     {vehicle.imageUrl && (
         <img
-          src={`http://localhost:3000${vehicle.imageUrl}`}
+          src={`https://trabajo-practico-ap-3.onrender.com0${vehicle.imageUrl}`}
           alt={vehicle.model}
           className="vehicle-detail-image"
         />
