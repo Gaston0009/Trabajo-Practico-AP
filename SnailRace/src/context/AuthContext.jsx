@@ -5,7 +5,8 @@ import {jwtDecode} from 'jwt-decode'
 export const AuthContext = createContext();
 
 const AuthContextProvider = ({children}) => {
-const [ user, setUser] = useState(null)
+const [ user, setUser] = useState(null);
+const [loading, setLoading] = useState(true);
 const auth = Cookies.get('token') || null;
 
     useEffect(() => {
@@ -26,6 +27,7 @@ const auth = Cookies.get('token') || null;
     }else {
         setUser(null);
     }
+        setLoading(false);
     },[]);
 
         const logout = () => {
@@ -36,7 +38,7 @@ const auth = Cookies.get('token') || null;
 
 
         return (
-        <AuthContext.Provider value={{user, setUser, logout}}>
+        <AuthContext.Provider value={{user, setUser, logout, loading}}>
             {children}
         </AuthContext.Provider>
     )
