@@ -43,7 +43,7 @@ const [notification, setNotification] = useState('');
 
 
         try {
-            await axios.post('http://localhost:3000/brands', formData, {
+            await axios.post('https://trabajo-practico-ap-3.onrender.com/brands', formData, {
                 headers: {
                     Authorization: `Bearer ${token}` ,
                     'Content-Type': 'multipart/form-data',
