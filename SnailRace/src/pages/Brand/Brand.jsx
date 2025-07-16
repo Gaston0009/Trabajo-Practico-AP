@@ -17,7 +17,7 @@ const Brand = () => {
   const fetchBrands = async () => {
     try {
       const token = Cookies.get('token');
-      const res = await axios.get('http://localhost:3000/brands', {
+      const res = await axios.get('https://trabajo-practico-ap-3.onrender.com/brands', {
         headers: { Authorization: `Bearer ${token}` },
       });
       setBrands(res.data);
@@ -45,7 +45,7 @@ const Brand = () => {
   const deleteBrand = async (id) => {
   try {
     const token = Cookies.get('token');
-    await axios.delete(`http://localhost:3000/brands/${id}`, {
+    await axios.delete(`https://trabajo-practico-ap-3.onrender.com/brands/${id}`, {
       headers: { Authorization: `Bearer ${token}` },
     });
     setBrands(prev => prev.filter(b => b._id !== id));
@@ -81,7 +81,7 @@ const Brand = () => {
             <h2 className="brand-name">{b.name}</h2>
             <img
               className="brand-image"
-              src={`http://localhost:3000${b.imageUrl}`}
+              src={`https://trabajo-practico-ap-3.onrender.com/${b.imageUrl}`}
               alt={b.name}
             />
             <div className="brand-buttons">
