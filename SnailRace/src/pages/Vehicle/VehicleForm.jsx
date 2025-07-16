@@ -49,7 +49,7 @@ const Vehicle = () => {
 const fetchBrands = async () => {
   try {
       const token = Cookies.get('token');
-      const res = await axios.get(`http://localhost:3000/brands`, {
+      const res = await axios.get(`https://trabajo-practico-ap-3.onrender.com/brands`, {
         headers: {
           Authorization: `Bearer ${token}`
         }
@@ -87,7 +87,7 @@ useEffect(() => {
     
 
     try {
-      await axios.post('http://localhost:3000/vehicles', formData, {
+      await axios.post('https://trabajo-practico-ap-3.onrender.com/vehicles', formData, {
         headers: {
           Authorization: `Bearer ${token}`,
           'Content-Type': 'multipart/form-data',
