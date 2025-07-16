@@ -19,7 +19,7 @@ const Vehicle = () => {
   const fetchVehicles = async () => {
     try {
       const token = Cookies.get('token');
-      const res = await axios.get('http://localhost:3000/vehicles', {
+      const res = await axios.get('https://trabajo-practico-ap-1.onrender.com/vehicles', {
         headers: { Authorization: `Bearer ${token}` },
       });
       setVehicles(res.data);
@@ -47,7 +47,7 @@ const Vehicle = () => {
 const deleteVehicle = async (id) => {
   try {
     const token = Cookies.get('token');
-    await axios.delete(`http://localhost:3000/vehicles/${id}`, {
+    await axios.delete(`https://trabajo-practico-ap-1.onrender.com/vehicles/${id}`, {
       headers: { Authorization: `Bearer ${token}` },
     });
     setVehicles(prev => prev.filter(v => v._id !== id));
@@ -72,7 +72,7 @@ const deleteVehicle = async (id) => {
   const handleLike = async (vehicleId) => {
     try {
       const token = Cookies.get('token');
-      await axios.post(`http://localhost:3000/vehicles/${vehicleId}/like`, null, {
+      await axios.post(`https://trabajo-practico-ap-1.onrender.com/vehicles/${vehicleId}/like`, null, {
         headers: { Authorization: `Bearer ${token}` },
       });
       fetchVehicles();
@@ -84,7 +84,7 @@ const deleteVehicle = async (id) => {
   const handleDislike = async (vehicleId) => {
     try {
       const token = Cookies.get('token');
-      await axios.post(`http://localhost:3000/vehicles/${vehicleId}/dislike`, null, {
+      await axios.post(`https://trabajo-practico-ap-1.onrender.com/vehicles/${vehicleId}/dislike`, null, {
         headers: { Authorization: `Bearer ${token}` },
       });
       fetchVehicles();
