@@ -10,7 +10,7 @@ const AdminUsers = () => {
 
   useEffect(() => {
     const token = Cookies.get('token');
-    axios.get('http://localhost:3000/users', {
+    axios.get('https://trabajo-practico-ap-3.onrender.com/users', {
       headers: { Authorization: `Bearer ${token}` }
     })
     .then(res => setUsers(res.data))
@@ -37,7 +37,7 @@ const AdminUsers = () => {
 const deleteUser = async (id) => {
   const token = Cookies.get('token');
   try {
-    await axios.delete(`http://localhost:3000/users/${id}`, {
+    await axios.delete(`https://trabajo-practico-ap-3.onrender.com/users/${id}`, {
       headers: { Authorization: `Bearer ${token}` }
     });
     setUsers(prev => prev.filter(u => u._id !== id));
@@ -78,7 +78,7 @@ return (
             <td>
               {u.imageUrl ? (
                 <img
-                  src={`http://localhost:3000${u.imageUrl}`}
+                  src={`https://trabajo-practico-ap-3.onrender.com${u.imageUrl}`}
                   alt={u.username}
                   width="50"
                   height="50"
