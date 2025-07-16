@@ -130,7 +130,7 @@ return (
           <h2 className="vehicle-model">{v.model}</h2>
           <img
             className="vehicle-image"
-            src={`http://localhost:3000${v.imageUrl}`}
+            src={`https://trabajo-practico-ap-3.onrender.com${v.imageUrl}`}
             alt={v.model}
           />
           <div className="vehicle-info">
