@@ -81,7 +81,7 @@ const Brand = () => {
             <h2 className="brand-name">{b.name}</h2>
             <img
               className="brand-image"
-              src={`https://trabajo-practico-ap-3.onrender.com/${b.imageUrl}`}
+              src={`https://trabajo-practico-ap-3.onrender.com${b.imageUrl}`}
               alt={b.name}
             />
             <div className="brand-buttons">
