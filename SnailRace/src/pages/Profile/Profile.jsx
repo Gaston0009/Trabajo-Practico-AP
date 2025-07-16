@@ -12,7 +12,7 @@ const Profile = () => {
     const fetchUser = async () => {
       const token = Cookies.get('token');
       try {
-        const res = await axios.get('http://localhost:3000/users/me', {
+        const res = await axios.get('https://trabajo-practico-ap-3.onrender.com/users/me', {
           headers: {
             Authorization: `Bearer ${token}`
           }
@@ -37,7 +37,7 @@ const Profile = () => {
               <p><strong>Usuario:</strong> {user.username}</p>
                   {user.imageUrl ? (
                   <img
-                      src={`http://localhost:3000${user.imageUrl}`}
+                      src={`https://trabajo-practico-ap-3.onrender.com${user.imageUrl}`}
                       alt="Foto de perfil"
                       className="profile-image"
                   />
