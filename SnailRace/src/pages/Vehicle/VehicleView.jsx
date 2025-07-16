@@ -32,7 +32,7 @@ const VehicleView= () => {
 
     {vehicle.imageUrl && (
         <img
-          src={`https://trabajo-practico-ap-3.onrender.com0${vehicle.imageUrl}`}
+          src={`https://trabajo-practico-ap-3.onrender.com${vehicle.imageUrl}`}
           alt={vehicle.model}
           className="vehicle-detail-image"
         />
