@@ -46,7 +46,7 @@ const EditVehicle = () => {
   const fetchBrands = async () => {
     try {
       const token = Cookies.get('token');
-      const res = await axios.get('http://localhost:3000/brands', {
+      const res = await axios.get('https://trabajo-practico-ap-3.onrender.com/brands', {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -61,7 +61,7 @@ const EditVehicle = () => {
   const fetchVehicle = async () => {
     try {
       const token = Cookies.get('token');
-      const res = await axios.get(`http://localhost:3000/vehicles/${id}`, {
+      const res = await axios.get(`https://trabajo-practico-ap-3.onrender.com/vehicles/${id}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -105,7 +105,7 @@ const EditVehicle = () => {
     }
 
     try {
-      await axios.put(`http://localhost:3000/vehicles/${id}`, formData, {
+      await axios.put(`https://trabajo-practico-ap-3.onrender.com/vehicles/${id}`, formData, {
         headers: {
           Authorization: `Bearer ${token}`,
           'Content-Type': 'multipart/form-data',
