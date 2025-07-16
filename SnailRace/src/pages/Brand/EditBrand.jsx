@@ -33,7 +33,7 @@ const EditBrand = () => {
     const  fetchBrand = async () => {
         try {
             const token = Cookies.get('token');
-            const res = await axios.get( `http://localhost:3000/brands/${id}`, {
+            const res = await axios.get( `https://trabajo-practico-ap-3.onrender.com/brands/${id}`, {
                 headers: {
                     Authorization: `Bearer ${token}`,
                 },
@@ -64,7 +64,7 @@ const EditBrand = () => {
         }
 
         try {
-            await axios.put(`http://localhost:3000/brands/${id}`, formData, {
+            await axios.put(`https://trabajo-practico-ap-3.onrender.com/brands/${id}`, formData, {
                 headers: {
                     Authorization: `Bearer ${token}`,
                     'Content-Type': 'multipart/form-data',
