@@ -13,7 +13,7 @@ const EditProfile = () => {
   useEffect(() => {
     const fetchUser = async () => {
       const token = Cookies.get('token');
-      const res = await axios.get('http://localhost:3000/users/me', {
+      const res = await axios.get('https://trabajo-practico-ap-3.onrender.com/users/me', {
         headers: { Authorization: `Bearer ${token}` },
       });
       reset(res.data);
@@ -41,7 +41,7 @@ const EditProfile = () => {
     }
 
     try {
-      await axios.put('http://localhost:3000/users/me', formData, {
+      await axios.put('https://trabajo-practico-ap-3.onrender.com/users/me', formData, {
         headers: {
           Authorization: `Bearer ${token}`,
           'Content-Type': 'multipart/form-data',
